@@ -1,0 +1,58 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: cursive;
+}
+body{
+    background: linear-gradient(148deg, rgba(2,0,36,1) 0%, rgba(130,1,1,1) 63%, rgba(0,212,255,1) 100%);
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
+}
+
+h1{
+    text-align: center;
+    padding-top: 1em;
+    color: white;
+}
+.contenedor-buscar{
+    display: flex;
+    width: 100%;
+    padding: 1em;
+    justify-content: center;
+    gap: 1em;
+    flex-wrap: wrap;
+}
+.inputBuscar{
+    color: black;
+    width: 700px;
+    height: 4em ;
+    border: none;
+    border-radius: 1em;
+    font-size: 1em;
+    text-align: center;
+}
+.botonBuscar{
+    width: 100px;
+    border: none;
+    border-radius: 1em;
+}
+
+.contenedor-tarjeta{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 10px 0 10px;
+}
+.tarjeta{
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    max-width: 500px;
+    min-width: 250px;
+    height: 300px;
+    text-align: center;
+}
+.imagen{
+    width: 200px;
+}
