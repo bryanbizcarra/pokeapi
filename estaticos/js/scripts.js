@@ -1,3 +1,4 @@
+const formulario = document.getElementById('formulario')
 const botonBuscar = document.getElementById('botonBuscar')
 const inputBuscar = document.getElementById('inputBuscar')
 const tarjeta = document.querySelector('.tarjeta')
@@ -7,6 +8,10 @@ const listaTipo = document.querySelector('.listaTipo')
 
 const url = 'https://pokeapi.co/api/v2/pokemon/'
 botonBuscar.addEventListener('click', buscarPokemon)
+formulario.addEventListener('submit', (e) => {
+    e.preventDefault()
+    buscarPokemon()
+})
 function buscarPokemon() {
     listaTipo.textContent = ''
     fetch(`${url}${inputBuscar.value.toLowerCase()}`)
@@ -23,7 +28,8 @@ function buscarPokemon() {
         })
         .catch((error) => {
             console.log(error)
-            alert('Tu pokemon no pudo ser encontrado')
+            imagen.setAttribute('src', '#')
+            nombrePokemon.textContent = 'No hemos podido encontrar tu pokemon'
             inputBuscar.value = ''
         })
 }
