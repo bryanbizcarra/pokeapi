@@ -1,0 +1,17 @@
+.contenedor-pokemon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #ffffffc7;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+.img-pokemon{
+    width: 15rem;
+}
+
+.nombrePokemon{
+    font-size: 1.5rem;
+}

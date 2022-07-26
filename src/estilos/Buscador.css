@@ -1,0 +1,19 @@
+.formulario{
+    padding: 0 2rem;
+    display: flex;
+    justify-content: center;
+}
+
+.titulo{
+    text-align: center;
+    color: rgb(1, 61, 61);
+    font-size: 2.3rem;
+}
+.formulario input{
+    padding: 1rem 1rem;
+    border-style: none;
+}
+
+.input-buscador{
+    width:17rem;
+}
